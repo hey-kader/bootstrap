@@ -7,16 +7,13 @@ import Overview from './Components/Overview';
 import Nav from './Components/Nav.js';
 import { BrowserRouter as Router, Switch, Link, Route } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group'; 
-import Counter from './Components/Counter';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App () {
-
 	
   return (
 	  <div style={{maxWidth: "915px", margin: "auto"}}>
 		<Router>
-			<Counter />
 			<Nav />
 			<Switch>
 				<Route exact path="/" component={Home} />
@@ -24,7 +21,7 @@ function App () {
 				<Route path="/forward" component={Forward} />
 			</Switch>
 		</Router>
-		<EmailForm />
+	    <EmailForm />
     </div>
   );
 

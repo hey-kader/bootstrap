@@ -6,7 +6,8 @@ class Overview extends Component {
 	render () {
 		const style = {
 			width: "100%",
-			display: "inline-block"
+			contentAlign: "center", 
+			margin: "auto"
 		}
 		return (
 			<img src="./sunlook.jpeg" style={style}  alt="sunlook" id="sunlook" />
