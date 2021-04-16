@@ -6,9 +6,9 @@ class Forward extends Component {
 		return (
 			<Card id="main-card">
 					<Card.Header>
-						<Card.Title><h3>Skillset Summary</h3></Card.Title>
+						<Card.Title><h4>Summary Of Interests</h4></Card.Title>
 						<hr />
-						<Card.Text>
+						<Card.Text style={{lineHeight: "1.9rem"}}>
 							
 							<h5 style={{color: '#555'}}>Full Stack Development</h5>
 							<p>I practice full stack web development using either a LAMP stack, or a full stack javascript infrastructure. For front-end development, I perfer React to other frameworks (Vue, Angular) because of its speed. In tandem with the single threaded nature of nodejs, this js-stack approach is inceredibly fast and good for seo. 

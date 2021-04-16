@@ -6,13 +6,13 @@ import EmailForm from './Components/EmailForm';
 import Overview from './Components/Overview';
 import Nav from './Components/Nav.js';
 import { BrowserRouter as Router, Switch, Link, Route } from 'react-router-dom';
-import { CSSTransition } from 'react-transition-group'; 
+import { csstransition } from 'react-transition-group'; 
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App () {
 	
   return (
-	  <div style={{maxWidth: "915px", margin: "auto"}}>
+	  <div style={{maxWidth: "64%", margin: "auto"}}>
 		<Router>
 			<Nav />
 			<Switch>

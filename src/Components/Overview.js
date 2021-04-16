@@ -5,12 +5,13 @@ class Overview extends Component {
 
 	render () {
 		const style = {
-			width: "100%",
-			contentAlign: "center", 
-			margin: "auto"
+			width: "50%"
 		}
 		return (
-			<img src="./sunlook.jpeg" style={style}  alt="sunlook" id="sunlook" />
+			<>
+			<img src="./Images/pics/two/1.jpg" style={style}  alt="sunlook" id="dope" />
+			<img src="./Images/pics/two/3.jpg" style={style}  alt="sunlook" id="dope" />
+			</>
 		);
 	}
 
