@@ -21,15 +21,17 @@ class Nav extends Component {
 					  <h1 style={{margin: "0rem"}}>Kader Arnold</h1>
 				  </Link>
 
-				  <Link style={{color: 'black', display: "inline-block", margin: "0.25rem", padding: "0.3rem", fontSize: "90%"}} to="/overview">
+				  <Link style={{color: 'black', display: "inline-block", margin: "0.25rem", padding: "0.2rem", fontSize: "90%"}} to="/overview">
 					<li>Overview</li>
 				  </Link>
 
-				  <Link style={{color: 'black', display: "inline-block", margin: "0.25rem", padding: "0.3rem", fontSize: "90%"}} to="/forward"> 
+				  <Link style={{color: 'black', display: "inline-block", margin: "0.25rem", padding: "0.2rem", fontSize: "90%"}} to="/forward"> 
 					<li>Forward</li>
 				</Link>
+			    <div style={{color: 'black', display: "inline-block", margin: "0.25rem", padding: "0.2rem", fontSize: "90%"}}> 
+					  <li><a style={{color: "black"}} href="mailto:kaderarnold@icloud.com">Inquiries</a></li>
+				</div>
 			  </ul>
-			    <EmailForm />
 		  </nav>
 		);
 	};
