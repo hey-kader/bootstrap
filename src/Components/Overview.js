@@ -9,8 +9,8 @@ class Overview extends Component {
 		}
 		return (
 			<>
-			<img src="./Images/pics/two/1.jpg" style={style}  alt="sunlook" id="dope" />
-			<img src="./Images/pics/two/3.jpg" style={style}  alt="sunlook" id="dope" />
+			<img src="./Images/pics/two/1.jpg" style={style}  alt="traditional digital portraits" id="one" />
+			<img src="./Images/pics/two/3.jpg" style={style}  alt="against the flower wall in rittenhouse park" id="three" />
 			</>
 		);
 	}

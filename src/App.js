@@ -7,12 +7,13 @@ import Overview from './Components/Overview';
 import Nav from './Components/Nav.js';
 import { BrowserRouter as Router, Switch, Link, Route } from 'react-router-dom';
 import { csstransition } from 'react-transition-group'; 
+import Footer from "./Components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App () {
 	
   return (
-	  <div style={{maxWidth: "64%", margin: "auto"}}>
+	  <div style={{maxWidth: "65%", margin: "auto"}}>
 		<Router>
 			<Nav />
 			<Switch>
@@ -21,16 +22,14 @@ function App () {
 				<Route path="/forward" component={Forward} />
 			</Switch>
 		</Router>
-	    <EmailForm />
+	    <Footer />
     </div>
   );
 
 }
 
 const Home = () => (
-	<div>
-		<HomePhotos  />
-	</div>
+		<HomePhotos />
 );
 
 export default App;
