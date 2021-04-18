@@ -9,24 +9,23 @@ class Nav extends Component {
 	render () {
 		const style = {
 			background: "#ffd769",  
-			fontFamily: "Times", 
-			margin: "0"
+			margin: "0px",
+			padding: "0px", 
+			display: "inline-block",
+			width: "98%"
 		};
 		return (
 		
 		  <nav style={style}>
-			  <ul style={{listStyleType: "none", display: "inline-block" }}>
+			  <ul style={{background: "#ffda669", listStyleType: "none"}}>
 
-				  <Link style={{color: 'black'}} to="/" >
-					  <h1 style={{margin: "0rem", fontFamily: "times"}}>Kader Arnold</h1>
+				  <Link style={{color: 'black', display: "inline-block"}} to="/" >
+					  <h1>Kader Arnold</h1>
 				  </Link>
-
-				  <Link style={{color: 'black', display: "inline-block", margin: "0.1rem", padding: "0.2rem", fontSize: "90%"}} to="/forward"> 
-					<li>Forward</li>
+				  <Link style={{color: 'black', margin: "0rem", padding: "0rem", fontSize: "80%"}} to="/forward"> 
+					  <Button style={{float: "right", margin: "0.5rem", padding: "0.5rem"}}>Bio</Button>
 				</Link>
-			    <div style={{color: 'black', display: "inline-block", margin: "0.1rem", padding: "0.2rem", fontSize: "90%"}}> 
-					  <li><a style={{color: "black"}} href="mailto:kaderarnold@icloud.com">Inquiries</a></li>
-				</div>
+				  <Button style={{float: "right", margin: "0.5rem", padding: "0.5rem"}}><a href="#" style={{color: "white"}}>CV</a></Button>
 			  </ul>
 		  </nav>
 		);

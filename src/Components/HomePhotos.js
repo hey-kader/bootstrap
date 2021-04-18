@@ -5,10 +5,9 @@ class HomePhotos extends Component {
 	render () {
 
 		const picStyle = {
-			maxWidth: "50%", 
-			width: "50%", 
-			padding: "0px", 
-			display: "inline-block"
+			width: "49%", 
+			margin: "0px",  
+			padding: "0px"
 		};
 
 		return (
