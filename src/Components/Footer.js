@@ -15,7 +15,7 @@ class Footer extends Component {
 						className="fa fa-github footer-icon" target="_blank"></a>
 					<a style={{marginRight: "0.5rem"}} href="https://www.linkedin.com/in/kader-arnold-77008a210" 
 						className="fa fa-linkedin footer-icon" target="_blank"></a>
-					<a style={{fontSize: "90%", opacity: "80%",  float: "right", marginRight: "1.5rem"}} href="mailto:kaderarnold@icloud.com">email</a>
+					<a style={{fontSize: "90%", opacity: "80%",  float: "right", marginRight: "1.25rem", marginTop: "2px"}} href="mailto:kaderarnold@icloud.com">inquiries</a>
 				</address>
 			</footer>
 		);

@@ -1,32 +1,37 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import {Button} from 'react-bootstrap';
-import '../App.js'
+import {ButtonGroup, Button} from 'react-bootstrap';
 
-import Forward from './Forward';
+import '../App.js'
+import Bio from './Bio';
 
 class Nav extends Component {
 	render () {
 		const style = {
-			background: "#ffd769",  
+			background: "#ffda669", 
 			margin: "0px",
 			padding: "0px", 
 			display: "inline-block",
 			width: "98%"
 		};
+		const buttonStyle = {
+			margin: "0.5rem 0rem 0.5rem 0rem", 
+			float: "right" 
+		};
 		return (
 		
 		  <nav style={style}>
-			  <ul style={{background: "#ffda669", listStyleType: "none"}}>
-
-				  <Link style={{color: 'black', display: "inline-block"}} to="/" >
-					  <h1>Kader Arnold</h1>
-				  </Link>
-				  <Link style={{color: 'black', margin: "0rem", padding: "0rem", fontSize: "80%"}} to="/forward"> 
-					  <Button style={{float: "right", margin: "0.5rem", padding: "0.5rem"}}>Bio</Button>
-				</Link>
-				  <Button style={{float: "right", margin: "0.5rem", padding: "0.5rem"}}><a href="#" style={{color: "white"}}>CV</a></Button>
-			  </ul>
+			  <Link style={{color: 'black', display: "inline-block"}} to="/" >
+				  <h1 style={{margin: "0rem 0.5rem 0.5rem 0rem"}}>Kader Arnold</h1>
+			  </Link>
+			 <ButtonGroup style={buttonStyle} toggle>
+				  <Link to="/bio"> 
+					  <Button style={{marginLeft: "0.2rem"}}>bio</Button>
+				 </Link>
+				  <Link to="/cv"> 
+					  <Button style={{marginLeft: "0.2rem"}}>cv</Button>
+				 </Link>
+			</ButtonGroup>
 		  </nav>
 		);
 	};
