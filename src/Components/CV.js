@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
+import {Image} from 'react-bootstrap';
 
 class CV extends Component {
 	render () {
 		return (
-			<h1>cv</h1>
+			<article>
+				<img src="./CV.pdf" alt="cv" />
+			</article>
 		);
 	}
 }

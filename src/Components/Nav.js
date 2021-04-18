@@ -22,15 +22,12 @@ class Nav extends Component {
 		return (
 		  <nav style={style}>
 			  <Link style={{color: 'black', display: "inline-block"}} to="/" >
-				  <h1 style={{margin: "0rem 0.5rem 0.5rem 0rem"}}>Kader Arnold</h1>
+				  <h1 style={{margin: "0.7rem 0.5rem 0.5rem 0rem"}}>Kader Arnold</h1>
 			  </Link>
 			 <ButtonGroup style={buttonStyle} toggle>
-				  <Link to="/bio"> 
-					  <Button id="bio" style={{marginLeft: "0.2rem"}}>bio</Button>
-				 </Link>
-				  <Link to="/cv"> 
-					  <Button id="cv" style={{marginLeft: "0.2rem"}}>cv</Button>
-				 </Link>
+				  <Link to="/bio" style={{margin: "0.5rem 0rem 0.5rem 0.5rem"}}>
+					  <Button id="bio" style={{marginLeft: "1rem"}}>bio</Button>
+				  </Link>
 			</ButtonGroup>
 		  </nav>
 		);
