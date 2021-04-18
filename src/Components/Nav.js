@@ -6,6 +6,7 @@ import '../App.js'
 import Bio from './Bio';
 
 class Nav extends Component {
+	
 	render () {
 		const style = {
 			background: "#ffda669", 
@@ -19,17 +20,16 @@ class Nav extends Component {
 			float: "right" 
 		};
 		return (
-		
 		  <nav style={style}>
 			  <Link style={{color: 'black', display: "inline-block"}} to="/" >
 				  <h1 style={{margin: "0rem 0.5rem 0.5rem 0rem"}}>Kader Arnold</h1>
 			  </Link>
 			 <ButtonGroup style={buttonStyle} toggle>
 				  <Link to="/bio"> 
-					  <Button style={{marginLeft: "0.2rem"}}>bio</Button>
+					  <Button id="bio" style={{marginLeft: "0.2rem"}}>bio</Button>
 				 </Link>
 				  <Link to="/cv"> 
-					  <Button style={{marginLeft: "0.2rem"}}>cv</Button>
+					  <Button id="cv" style={{marginLeft: "0.2rem"}}>cv</Button>
 				 </Link>
 			</ButtonGroup>
 		  </nav>
