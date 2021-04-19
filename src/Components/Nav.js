@@ -6,8 +6,23 @@ import '../App.js'
 import Bio from './Bio';
 
 class Nav extends Component {
+
+	state = {count: 0}
+
+	toggle = () => {
+		if (this.state.count == 0) {
+			document.getElementById("bio").style.background = "red";
+			this.setState({count: 1})
+		}
+		else {
+			document.getElementById("bio").style.background = "blue";
+			window.location = '/'
+			this.setState({count: 0})
+		}
+	}
 	
 	render () {
+
 		const style = {
 			background: "#ffda669", 
 			margin: "0px",
@@ -26,7 +41,7 @@ class Nav extends Component {
 			  </Link>
 			 <ButtonGroup style={buttonStyle} toggle>
 				  <Link to="/bio" style={{margin: "0.5rem 0rem 0.5rem 0.5rem"}}>
-					  <Button id="bio" style={{marginLeft: "1rem"}}>bio</Button>
+					  <Button onClick={this.toggle} id="bio" style={{marginLeft: "1rem"}}>bio</Button>
 				  </Link>
 			</ButtonGroup>
 		  </nav>
