@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Card, Button} from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 
-class Forward extends Component {
+class Bio extends Component {
 	render () {
 		return (
 			<Card id="main-card" style={{width: "98%"}}>
@@ -45,4 +45,4 @@ class Forward extends Component {
 	}
 
 }
-export default Forward;
+export default Bio;
